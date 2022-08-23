@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mWb/KwrKkB79YFkBv2U67YLk3SHvgT2zhuT1IsPb2BU=",
+  "Source": "devops-lab01",
+  "BasePath": "_content/devops-lab01",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
