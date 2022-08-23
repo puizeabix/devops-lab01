@@ -45,3 +45,4 @@ jobs:
     steps:
       - name: Just the simple deployment job
         run: echo 'Deploy code to dev environment'
+    needs: prepare
