@@ -1,0 +1,14 @@
+name: Automate only workflow
+
+on:
+  push:
+    branches:
+      - "master"
+      - "dev"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Simple job"
+        run: echo 'Hello Automate only jobs'
