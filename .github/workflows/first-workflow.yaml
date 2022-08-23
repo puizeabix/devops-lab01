@@ -19,3 +19,9 @@ jobs:
         run: echo 'File' > file.txt
       - name: Echo file content
         run: cat file.txt
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo file content
+        run: cat file.txt
