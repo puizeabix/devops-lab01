@@ -1,0 +1,13 @@
+name: Use Actions Workflow 
+on: 
+  push:
+    branches:
+      - "master"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v2
+      - run: dotnet --info
