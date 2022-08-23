@@ -11,6 +11,8 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
+      - name: Start jobs 
+        run: time
       - name: Run simple command
         run: echo 'Hello DevOps'
       - name: Run another command
@@ -23,5 +25,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Start jobs
+        run: time
       - name: Echo file content
         run: cat file.txt
