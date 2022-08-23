@@ -29,6 +29,8 @@ jobs:
         run: date
       - name: Echo file content
         run: cat file.txt
+      - name: Finalized step 
+        run: echo 'Job build finished'
     needs: prepare
 
   deploy:
@@ -37,3 +39,9 @@ jobs:
       - name: Just simple job
         run: echo 'This is just a job'
     needs: build
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Just the simple deployment job
+        run: echo 'Deploy code to dev environment'
