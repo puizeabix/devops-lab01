@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Start jobs 
-        run: time
+        run: date
       - name: Run simple command
         run: echo 'Hello DevOps'
       - name: Run another command
@@ -26,6 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Start jobs
-        run: time
+        run: date
       - name: Echo file content
         run: cat file.txt
